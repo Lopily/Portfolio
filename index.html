@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Portfolio — Luau Developer</title>
+    <meta
+      name="description"
+      content="Portfolio of a Luau (Roblox) developer. Modules, UI, pathfinding, tooling and best practices. Computer Science student."
+    />
+    <link rel="icon" href="assets/icons/favicon.png" sizes="any" />
+    <link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml" />
+    <meta property="og:title" content="Portfolio — Luau Developer" />
+    <meta
+      property="og:description"
+      content="Modules, UI, pathfinding, tooling and best practices. CS student."
+    />
+    <meta property="og:image" content="assets/images/og-image.png" />
+    <meta property="og:type" content="website" />
+    <meta name="theme-color" content="#0f172a" />
+    <link rel="preload" href="assets/images/hero.png" as="image" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header" role="banner">
+      <nav class="nav container" aria-label="Primary navigation">
+        <a class="brand" href="#">PORTFOLIO</a>
+        <button
+          class="nav-toggle"
+          aria-expanded="false"
+          aria-controls="nav-menu"
+          aria-label="Menu"
+        >
+          <span></span><span></span><span></span>
+        </button>
+        <ul id="nav-menu" class="nav-menu">
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#tools">Tools</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li>
+            <button
+              id="themeToggle"
+              class="btn-ghost"
+              aria-label="Toggle theme"
+            >
+              🌓
+            </button>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main id="main">
+      <!-- HERO -->
+      <section class="hero">
+        <div class="container hero-inner">
+          <p class="eyebrow">Luau Developer</p>
+          <h1><span class="accent">Lopily Dev</span></h1>
+          <p class="lead">
+            I build robust systems: modules, reactive UI, pathfinding and
+            tooling for high‑performance game experiences.
+          </p>
+          <div class="cta">
+            <a class="btn primary" href="#projects">View projects</a>
+            <a class="btn" href="#contact">Get in touch</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- ABOUT -->
+      <section id="about" class="section container">
+        <h2>About</h2>
+        <p>
+          I’m Lopily, an aspiring Luau developer with a growing passion for
+          building immersive Roblox experiences. While I’m still at the
+          beginning of my journey, I’m committed to learning and improving every
+          day.<br />
+          Currently, I’m studying <strong>Computer Science</strong>, which gives
+          me a strong foundation in
+          <strong
+            >programming principles, optimization techniques, and best practices
+            such as scoping, profiling, and design patterns</strong
+          >.<br />
+          My focus is on
+          <strong
+            >writing clean, modular code and creating intuitive, user-friendly
+            interfaces</strong
+          >. I enjoy experimenting with different approaches to problem-solving
+          and continuously seek ways to make systems more efficient and
+          maintainable. Beyond coding, I’m curious about game design concepts
+          and how technical decisions impact player experience. <br />I see
+          every project as an opportunity to grow, and I’m excited to apply what
+          I learn in real-world scenarios while contributing to creative and
+          engaging Roblox games.
+        </p>
+      </section>
+
+      <!-- SKILLS -->
+      <section id="skills" class="section container">
+        <h2>Skills</h2>
+        <div class="skills">
+          <article class="card">
+            <h3>Languages</h3>
+            <ul>
+              <li>Luau (Roblox)</li>
+              <li>C# (Unity)</li>
+              <li>Python (tooling)</li>
+            </ul>
+          </article>
+          <article class="card">
+            <h3>Frontend & UI</h3>
+            <ul>
+              <li>UI components, state</li>
+              <li>Design systems & accessibility</li>
+              <li>Responsive & performance</li>
+            </ul>
+          </article>
+          <article class="card">
+            <h3>Gameplay & Data</h3>
+            <ul>
+              <li>Basic pathfinding and simple NPC logic</li>
+              <li>Working with DataStore for saving player data</li>
+              <li>Event handling and messaging between scripts</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <!-- PROJECTS -->
+      <section id="projects" class="section container">
+        <h2>Projects</h2>
+        <div class="projects">
+          <article class="project reveal">
+            <div class="project-text">
+              <h3>Simple Inventory System</h3>
+              <p>
+                Basic inventory with item slots and stack handling. Built using
+                Luau modules for clean organization.
+              </p>
+            </div>
+          </article>
+
+          <article class="project reveal">
+            <div class="project-text">
+              <h3>NPC Movement Prototype</h3>
+              <p>
+                Created simple NPC movement using waypoints and basic
+                pathfinding logic. Includes patrol and chase states.
+              </p>
+            </div>
+          </article>
+
+          <article class="project reveal">
+            <div class="project-text">
+              <h3>UI Components</h3>
+              <p>
+                Designed reusable UI elements with state changes and animations
+                for menus and buttons.
+              </p>
+            </div>
+          </article>
+
+          <article class="project reveal">
+            <div class="project-text">
+              <h3>DataStore Basics</h3>
+              <p>
+                Implemented player data saving and loading using Roblox
+                DataStore for persistence.
+              </p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- TOOLS -->
+      <section id="tools" class="section container">
+        <h2>Tools & Workflow</h2>
+        <div class="skills">
+          <article class="card">
+            <h3>Roblox Studio</h3>
+            <p>
+              Main development environment for building and testing games.
+              Includes Explorer, Properties, and built-in tools for scripting,
+              UI design, and debugging.
+            </p>
+          </article>
+
+          <article class="card">
+            <h3>Rojo & Wally</h3>
+            <p>
+              Rojo for syncing Roblox Studio with VS Code for better code
+              editing. Wally for managing community packages and dependencies.
+            </p>
+          </article>
+
+          <article class="card">
+            <h3>Version Control (Git)</h3>
+            <p>
+              Using Git for tracking changes and collaborating on projects.
+              Essential for organizing code and maintaining clean workflows.
+            </p>
+          </article>
+
+          <article class="card">
+            <h3>Testing & Debugging</h3>
+            <p>
+              Basic unit tests, Luau linting, and Roblox Studio’s microprofiler
+              for performance checks.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <!-- CONTACT -->
+      <section id="contact" class="section container">
+        <h2>Contact</h2>
+        <div class="contact_">
+          <p>Discord:</p>
+          <p>GitHub: <a href="https://github.com/Lopily">Lopily</a></p>
+          <p>
+            Mail: <a href="mailto:lopilytktk@gmail.com">lopilytktk@gmail.com</a>
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p>© <span id="year"></span> Luau Portfolio</p>
+        <a class="top" href="#">↑ Back to top</a>
+      </div>
+    </footer>
+
+    <script src="script.js" defer></script>
+  </body>
+</html>
